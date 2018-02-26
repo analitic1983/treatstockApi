@@ -1,15 +1,15 @@
 <?php
 
-namespace treatstock\apiv2\requests;
+namespace treatstock\api\v2\requests;
 
-use treatstock\apiv2\answers\AnswerGetPrintablePackStatus;
+use treatstock\api\v2\responses\ResponseGetPrintablePackCosts;
 
 /**
- * Class RequestGetPrintablePackStatus
+ * Class RequestGetPrintablePackCosts
  *
- * @package treatstock\apiv2
+ * @package treatstock\api\v2\requests
  */
-class RequestGetPrintablePackStatus extends RequestBase
+class RequestGetPrintablePackCosts extends RequestBase
 {
 
     /**
@@ -26,7 +26,7 @@ class RequestGetPrintablePackStatus extends RequestBase
      */
     public function getRequestUrl()
     {
-        return 'printable-packs/' . $this->printablePackId . '?private-key=' . $this->privateKey;
+        return 'printable-pack-costs/?printablePackId=' . $this->printablePackId . '&private-key=' . $this->privateKey;
     }
 
     /**
@@ -36,7 +36,7 @@ class RequestGetPrintablePackStatus extends RequestBase
      */
     public function getAnswerClass()
     {
-        return AnswerGetPrintablePackStatus::class;
+        return ResponseGetPrintablePackCosts::class;
     }
 
     /**

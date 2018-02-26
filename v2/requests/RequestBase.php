@@ -1,6 +1,6 @@
 <?php
 
-namespace treatstock\apiv2\requests;
+namespace treatstock\api\v2\requests;
 
 abstract class RequestBase
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace treatstock\apiv2\answers;
+namespace treatstock\api\v2\responses;
 
 
 /**
- * Class AnswerCreatePrintablePack
+ * class ResponseCreatePrintablePack
  *
- * @package treatstock\apiv2
+ * @package treatstock\api\v2
  */
-class AnswerGetPrintablePackCosts extends AnswerBase
+class ResponseGetPrintablePackCosts extends ResponseBase
 {
     /**
      * Printing cost info

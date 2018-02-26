@@ -1,5 +1,5 @@
 <?php
-namespace treatstock\apiv2\answers;
+namespace treatstock\api\v2\responses;
 
 class CostInfo
 {

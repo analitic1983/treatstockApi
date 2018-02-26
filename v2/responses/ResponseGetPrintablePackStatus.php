@@ -1,9 +1,9 @@
 <?php
 
-namespace treatstock\apiv2\answers;
+namespace treatstock\api\v2\responses;
 
 
-class AnswerGetPrintablePackStatus extends AnswerBase
+class ResponseGetPrintablePackStatus extends ResponseBase
 {
     /**
      * Printable pack id

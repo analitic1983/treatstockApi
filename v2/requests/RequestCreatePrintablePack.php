@@ -1,13 +1,13 @@
 <?php
 
-namespace treatstock\apiv2\requests;
+namespace treatstock\api\v2\requests;
 
-use treatstock\apiv2\answers\AnswerCreatePrintablePack;
+use treatstock\api\v2\responses\ResponseCreatePrintablePack;
 
 /**
  * Class RequestCreatePrintablePack
  *
- * @package treatstock\apiv2\requests
+ * @package treatstock\api\v2\requests
  */
 class RequestCreatePrintablePack extends RequestBase
 {
@@ -115,7 +115,7 @@ class RequestCreatePrintablePack extends RequestBase
      */
     public function getAnswerClass()
     {
-        return AnswerCreatePrintablePack::class;
+        return ResponseCreatePrintablePack::class;
     }
 
     /**

@@ -1,17 +1,25 @@
 <?php
 
-namespace treatstock\apiv2\requests;
+namespace treatstock\api\v2\requests;
 
-use treatstock\apiv2\answers\AnswerGetMaterialGroupColors;
+use treatstock\api\v2\responses\ResponseGetPrintablePackStatus;
 
 
 /**
- * Class RequestGetMaterialGroupColors
+ * Class RequestGetPrintablePackStatus
  *
- * @package treatstock\apiv2\requests
+ * @package treatstock\api\v2
  */
-class RequestGetMaterialGroupColors extends RequestBase
+class RequestGetPrintablePackStatus extends RequestBase
 {
+
+    /**
+     * Printable pack id
+     *
+     * @var int
+     */
+    public $printablePackId;
+
     /**
      * Form request url
      *
@@ -19,7 +27,7 @@ class RequestGetMaterialGroupColors extends RequestBase
      */
     public function getRequestUrl()
     {
-        return 'material-group-colors/?private-key=' . $this->privateKey;
+        return 'printable-packs/' . $this->printablePackId . '?private-key=' . $this->privateKey;
     }
 
     /**
@@ -29,7 +37,7 @@ class RequestGetMaterialGroupColors extends RequestBase
      */
     public function getAnswerClass()
     {
-        return AnswerGetMaterialGroupColors::class;
+        return ResponseGetPrintablePackStatus::class;
     }
 
     /**

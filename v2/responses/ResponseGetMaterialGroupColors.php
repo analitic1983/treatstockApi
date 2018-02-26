@@ -1,7 +1,7 @@
 <?php
-namespace treatstock\apiv2\answers;
+namespace treatstock\api\v2\responses;
 
-class AnswerGetMaterialGroupColors extends AnswerBase
+class ResponseGetMaterialGroupColors extends ResponseBase
 {
     /**
      * Printing cost info

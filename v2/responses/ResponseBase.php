@@ -1,13 +1,13 @@
 <?php
 
-namespace treatstock\apiv2\answers;
+namespace treatstock\api\v2\responses;
 
 /**
- * Class AnswerBase
+ * class ResponseBase
  *
- * @package treatstock\apiv2
+ * @package treatstock\api\v2
  */
-abstract class AnswerBase
+abstract class ResponseBase
 {
     /**
      * Request has success answer

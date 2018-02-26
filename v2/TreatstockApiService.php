@@ -1,15 +1,15 @@
 <?php
 
-namespace treatstock\apiv2;
+namespace treatstock\api\v2;
 
-use treatstock\apiv2\requests\RequestBase;
+use treatstock\api\v2\requests\RequestBase;
 
 /**
  * Class TreatstockApiV2Controller
  *
- * @package treatstock\apiv2
+ * @package treatstock\api\v2
  */
-class TreatstockApiV2Service
+class TreatstockApiService
 {
     public $apiUrl = '';
     public $isDebug = false;
